@@ -8,7 +8,7 @@ export const LEVJA_CONFIG = {
   
   // Enlaces de redes sociales
   instagramUrl: "https://www.instagram.com/levja.tm/",
-  tiktokUrl: null, // "por ahora no" - Cuando tengas TikTok colocás la URL acá y se activa solo
+  tiktokUrl: "https://www.tiktok.com/@levja.tm",
   catalogUrl: "https://wa.me/5492974343520?text=Hola%20LEVJA!%20Quisiera%20ver%20el%20cat%C3%A1logo%20completo%20de%20fragancias",
   
   // Mensajes predeterminados
