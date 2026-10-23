@@ -4,24 +4,24 @@ import { ChevronRight } from 'lucide-react';
 function PerfumeInfo({ line1, line2, brand, desc, onClick, label }) {
   return (
     <div className="relative z-10 flex flex-col items-start text-left">
-      <span className="font-sans text-[12px] sm:text-[17px] font-semibold tracking-[1.5px] sm:tracking-[2px] text-white leading-[1.22] uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
+      <span className="font-sans text-[11px] sm:text-[14px] font-semibold tracking-[1.5px] sm:tracking-[2px] text-white leading-[1.2] uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
         {line1}
         <br />
         {line2}
       </span>
-      <span className="font-sans text-[8px] sm:text-[9.5px] tracking-[2px] sm:tracking-[2.5px] text-white/75 uppercase mt-1 sm:mt-1.5 drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
+      <span className="font-sans text-[7.5px] sm:text-[9px] tracking-[1.8px] sm:tracking-[2.2px] text-white/75 uppercase mt-1 drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
         {brand}
       </span>
-      <span className="block w-5 sm:w-6 h-px bg-white/55 mt-2 sm:mt-3" />
-      <p className="font-sans text-[8.5px] sm:text-[11px] leading-[1.4] sm:leading-[1.45] tracking-[0.3px] sm:tracking-[0.5px] text-white/85 mt-2 sm:mt-3 mb-3 sm:mb-5 max-w-[92px] sm:max-w-[118px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+      <span className="block w-4 sm:w-5 h-px bg-white/55 mt-1.5 sm:mt-2" />
+      <p className="font-sans text-[7.5px] sm:text-[9.5px] leading-[1.35] sm:leading-[1.4] tracking-[0.3px] text-white/85 mt-1.5 sm:mt-2 mb-2 sm:mb-3 max-w-[85px] sm:max-w-[115px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
         {desc}
       </p>
       <button
         onClick={onClick}
         aria-label={label}
-        className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-1.5 sm:py-2 bg-black/45 border border-white/65 rounded-full text-white font-sans text-[7.5px] sm:text-[9px] font-medium tracking-[1.5px] sm:tracking-[2px] uppercase whitespace-nowrap backdrop-blur-sm transition-all duration-300 hover:bg-white/15 hover:border-white hover:shadow-[0_0_14px_rgba(255,255,255,0.25)] hover:-translate-y-0.5"
+        className="inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 bg-black/45 border border-white/65 rounded-full text-white font-sans text-[7px] sm:text-[8px] font-medium tracking-[1.5px] sm:tracking-[2px] uppercase whitespace-nowrap backdrop-blur-sm transition-all duration-300 hover:bg-white/15 hover:border-white hover:shadow-[0_0_14px_rgba(255,255,255,0.25)] hover:-translate-y-0.5"
       >
-        VER MÁS <ChevronRight size={10} strokeWidth={2} className="sm:w-[11px] sm:h-[11px]" />
+        VER MÁS <ChevronRight size={9} strokeWidth={2} className="sm:w-[10px] sm:h-[10px]" />
       </button>
     </div>
   );
@@ -29,8 +29,8 @@ function PerfumeInfo({ line1, line2, brand, desc, onClick, label }) {
 
 export default function FeaturedSection({ onOpenModal }) {
   return (
-    <section className="w-full select-none" aria-label="Fragancias destacadas">
-      <div className="relative w-full h-[290px] sm:h-[330px] overflow-hidden rounded-[14px] border border-white/35 bg-black/20 shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
+    <section className="w-full select-none shrink-0" aria-label="Fragancias destacadas">
+      <div className="relative w-full h-[205px] sm:h-[245px] overflow-hidden rounded-[12px] sm:rounded-[14px] border border-white/35 bg-black/20 shadow-[0_6px_24px_rgba(0,0,0,0.4)]">
 
         {/* Escena de fondo: perfumes sobre las rocas volcánicas */}
         <img
@@ -50,21 +50,21 @@ export default function FeaturedSection({ onOpenModal }) {
         />
 
         {/* Cabecera */}
-        <div className="relative z-10 text-center pt-3 sm:pt-3.5">
-          <div className="flex items-center justify-center gap-2.5 sm:gap-3">
-            <span className="h-px w-12 sm:w-[76px] bg-gradient-to-r from-transparent to-white/60" />
-            <h2 className="font-sans text-[9.5px] sm:text-[11px] font-normal tracking-[2.5px] sm:tracking-[3px] text-white/95 uppercase">
+        <div className="relative z-10 text-center pt-2 sm:pt-2.5">
+          <div className="flex items-center justify-center gap-2 sm:gap-2.5">
+            <span className="h-px w-10 sm:w-[60px] bg-gradient-to-r from-transparent to-white/60" />
+            <h2 className="font-sans text-[8.5px] sm:text-[10px] font-normal tracking-[2px] sm:tracking-[2.8px] text-white/95 uppercase">
               Fragancias destacadas
             </h2>
-            <span className="h-px w-12 sm:w-[76px] bg-gradient-to-l from-transparent to-white/60" />
+            <span className="h-px w-10 sm:w-[60px] bg-gradient-to-l from-transparent to-white/60" />
           </div>
-          <span className="block font-sans text-[8px] sm:text-[9px] tracking-[2px] sm:tracking-[2.5px] text-white/65 uppercase mt-1">
+          <span className="block font-sans text-[7.5px] sm:text-[8.5px] tracking-[1.8px] sm:tracking-[2.2px] text-white/65 uppercase mt-0.5">
             Dos íconos, un estilo
           </span>
         </div>
 
         {/* Contenido en 3 columnas (Info Izquierda | Frascos Centro | Info Derecha) */}
-        <div className="relative z-10 grid grid-cols-[1fr_175px_1fr] sm:grid-cols-[1fr_270px_1fr] px-3.5 sm:px-6 h-[calc(100%-44px)] sm:h-[calc(100%-48px)] items-center">
+        <div className="relative z-10 grid grid-cols-[1fr_165px_1fr] sm:grid-cols-[1fr_240px_1fr] px-3 sm:px-6 h-[calc(100%-36px)] sm:h-[calc(100%-42px)] items-center">
           <PerfumeInfo
             line1="9PM"
             line2="Night Out"

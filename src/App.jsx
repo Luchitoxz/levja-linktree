@@ -74,7 +74,7 @@ export default function App() {
   )}`;
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col items-center bg-[#060709]">
+    <div className="relative h-[100dvh] w-full flex flex-col items-center justify-center bg-[#060709] overflow-hidden">
       {/* CAPA 1: Luz ambiental difuminada para PC / Pantallas anchas (Opción B) */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 hidden sm:block">
         <div
@@ -94,17 +94,18 @@ export default function App() {
           maskImage: 'linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%)',
         }}
       />
+
       {/* Botón Flotante de Compartir */}
       <ShareButton onShare={handleShare} />
 
-      {/* Contenedor Principal (Aspect Ratio Móvil centrado) */}
-      <main className="w-full max-w-[682px] px-4 pt-24 sm:px-[38px] sm:pt-[128px] pb-6 flex flex-col relative z-10">
+      {/* Contenedor Principal (Ajustado exactamente a 100dvh sin scroll) */}
+      <main className="w-full max-w-[560px] h-[100dvh] max-h-[100dvh] px-3.5 sm:px-5 py-2 sm:py-3 flex flex-col justify-between relative z-10 overflow-hidden select-none">
         
         {/* Encabezado de Marca */}
         <Header />
 
         {/* Lista de Enlaces Principales */}
-        <section className="flex flex-col gap-2.5 sm:gap-[9px] mb-2.5 sm:mb-[10px]" aria-label="Enlaces directos">
+        <section className="flex flex-col gap-1.5 sm:gap-2 my-auto shrink-0" aria-label="Enlaces directos">
           
           {/* 1. CATÁLOGO */}
           <LinkCard
@@ -114,7 +115,7 @@ export default function App() {
             subtitle="TODAS NUESTRAS FRAGANCIAS"
             thumbSrc="./assets/thumb_catalogo.webp"
             thumbAlt="Catálogo LEVJA"
-            icon={<ShoppingBag size={28} strokeWidth={1.5} />}
+            icon={<ShoppingBag size={24} strokeWidth={1.5} className="sm:w-[26px] sm:h-[26px]" />}
           />
 
           {/* 2. INSTAGRAM */}
@@ -126,7 +127,7 @@ export default function App() {
             thumbSrc="./assets/thumb_instagram.webp"
             thumbAlt="Instagram LEVJA"
             icon={
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="sm:w-[26px] sm:h-[26px]">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
@@ -136,7 +137,7 @@ export default function App() {
 
           {/* 3. TIKTOK (visible si se configura en config.js) */}
           {LEVJA_CONFIG.tiktokUrl && (
-          <LinkCard
+            <LinkCard
               id="link-tiktok"
               href={LEVJA_CONFIG.tiktokUrl}
               title="TIKTOK"
@@ -144,7 +145,7 @@ export default function App() {
               thumbSrc="./assets/thumb_tiktok.webp"
               thumbAlt="TikTok LEVJA"
               icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="sm:w-[26px] sm:h-[26px]">
                   <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
                 </svg>
               }
@@ -159,7 +160,7 @@ export default function App() {
             subtitle="CONSULTAS Y PEDIDOS"
             thumbSrc="./assets/thumb_whatsapp.webp"
             thumbAlt="WhatsApp LEVJA"
-            icon={<MessageCircle size={28} strokeWidth={1.5} />}
+            icon={<MessageCircle size={24} strokeWidth={1.5} className="sm:w-[26px] sm:h-[26px]" />}
           />
 
           {/* 5. ENVÍOS */}
@@ -171,8 +172,8 @@ export default function App() {
         <FeaturedSection onOpenModal={(type) => setActiveModal(type)} />
 
         {/* Footer */}
-        <footer className="text-center mt-[18px] pb-3 select-none">
-          <span className="font-sans text-[8px] tracking-[2.2px] text-white/45 uppercase">
+        <footer className="text-center pt-0.5 pb-1 select-none shrink-0">
+          <span className="font-sans text-[7.5px] sm:text-[8.5px] tracking-[2.2px] text-white/45 uppercase">
             © LEVJA · FRAGANCIAS EXCLUSIVAS
           </span>
         </footer>
