@@ -79,7 +79,7 @@ export default function App() {
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 hidden sm:block">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-65 filter blur-[42px] scale-105"
-          style={{ backgroundImage: "url('/assets/background.jpg')" }}
+          style={{ backgroundImage: "url('./assets/background.jpg')" }}
         />
         {/* Velo de contraste y atmósfera de estudio para envolver la pantalla */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-[#060709]/70" />
@@ -89,7 +89,7 @@ export default function App() {
       <div
         className="fixed inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-[682px] pointer-events-none z-0 bg-no-repeat bg-top bg-cover sm:bg-[length:682px_auto]"
         style={{
-          backgroundImage: "url('/assets/background.jpg')",
+          backgroundImage: "url('./assets/background.jpg')",
           WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%)',
           maskImage: 'linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%)',
         }}
@@ -112,7 +112,7 @@ export default function App() {
             href={LEVJA_CONFIG.catalogUrl}
             title="CATÁLOGO"
             subtitle="TODAS NUESTRAS FRAGANCIAS"
-            thumbSrc="/assets/thumb_catalogo.webp"
+            thumbSrc="./assets/thumb_catalogo.webp"
             thumbAlt="Catálogo LEVJA"
             icon={<ShoppingBag size={28} strokeWidth={1.5} />}
           />
@@ -123,7 +123,7 @@ export default function App() {
             href={LEVJA_CONFIG.instagramUrl}
             title="INSTAGRAM"
             subtitle="NOVEDADES Y LANZAMIENTOS"
-            thumbSrc="/assets/thumb_instagram.webp"
+            thumbSrc="./assets/thumb_instagram.webp"
             thumbAlt="Instagram LEVJA"
             icon={
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -141,7 +141,7 @@ export default function App() {
               href={LEVJA_CONFIG.tiktokUrl}
               title="TIKTOK"
               subtitle="RESEÑAS Y CONTENIDO"
-              thumbSrc="/assets/thumb_tiktok.webp"
+              thumbSrc="./assets/thumb_tiktok.webp"
               thumbAlt="TikTok LEVJA"
               icon={
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -157,7 +157,7 @@ export default function App() {
             href={whatsappLink}
             title="WHATSAPP"
             subtitle="CONSULTAS Y PEDIDOS"
-            thumbSrc="/assets/thumb_whatsapp.webp"
+            thumbSrc="./assets/thumb_whatsapp.webp"
             thumbAlt="WhatsApp LEVJA"
             icon={<MessageCircle size={28} strokeWidth={1.5} />}
           />

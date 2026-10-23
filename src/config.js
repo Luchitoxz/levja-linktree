@@ -28,7 +28,7 @@ export const LEVJA_CONFIG = {
         corazon: "Flor de Azahar del naranjo, Lirio de los valles",
         fondo: "Vainilla Bourbon, Haba Tonka, Ámbar, Pachulí"
       },
-      image: "/assets/afnan_9pm.webp",
+      image: "./assets/afnan_9pm.webp",
       theme: "silver"
     },
     "montale": {
@@ -41,7 +41,7 @@ export const LEVJA_CONFIG = {
         corazon: "Madera de Agar (Oud), Rosa de Bulgaria",
         fondo: "Haba Tonka, Caña de Azúcar, Ámbar, Almizcle Blanco"
       },
-      image: "/assets/montale_arabians_tonka.webp",
+      image: "./assets/montale_arabians_tonka.webp",
       theme: "gold"
     }
   }

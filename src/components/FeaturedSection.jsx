@@ -34,7 +34,7 @@ export default function FeaturedSection({ onOpenModal }) {
 
         {/* Escena de fondo: perfumes sobre las rocas volcánicas */}
         <img
-          src="/assets/featured_scene.webp"
+          src="./assets/featured_scene.webp"
           alt="Afnan 9PM Night Out y Montale Arabians Tonka sobre rocas volcánicas"
           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
           loading="eager"
