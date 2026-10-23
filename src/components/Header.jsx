@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <header className="text-center select-none pt-[3.5vh] sm:pt-[4.5vh] mb-[2vh] sm:mb-[2.5vh] shrink-0">
+    <header className="text-center select-none pt-[1.8vh] sm:pt-[2.6vh] mb-[1.4vh] sm:mb-[1.8vh] shrink-0">
       <h1 
         className="font-serif text-[32px] sm:text-[42px] font-normal tracking-[0.3em] -mr-[0.3em] text-white uppercase leading-tight"
         style={{
@@ -12,7 +12,7 @@ export default function Header() {
         LEVJA
       </h1>
       
-      <div className="flex items-center justify-center gap-2.5 mt-1.5 sm:mt-2">
+      <div className="flex items-center justify-center gap-2.5 mt-1 sm:mt-1.5">
         <span className="inline-block h-[1px] w-8 sm:w-11 bg-gradient-to-r from-transparent via-white/65 to-transparent" />
         <span className="font-sans text-[8px] sm:text-[9.5px] font-medium tracking-[0.22em] text-white/85 uppercase whitespace-nowrap">
           PERFUMES · TECNOLOGÍA · ACCESORIOS
