@@ -98,14 +98,14 @@ export default function App() {
       {/* Botón Flotante de Compartir */}
       <ShareButton onShare={handleShare} />
 
-      {/* Contenedor Principal (Ajustado exactamente a 100dvh sin scroll) */}
-      <main className="w-full max-w-[560px] h-[100dvh] max-h-[100dvh] px-3.5 sm:px-5 py-2 sm:py-3 flex flex-col justify-between relative z-10 overflow-hidden select-none">
+      {/* Contenedor Principal (Centrado armónico sin scroll) */}
+      <main className="w-full max-w-[560px] h-[100dvh] max-h-[100dvh] px-3.5 sm:px-5 flex flex-col justify-center relative z-10 overflow-hidden select-none">
         
-        {/* Encabezado de Marca */}
+        {/* Encabezado de Marca (centrado y bajado respecto a los frascos superiores) */}
         <Header />
 
         {/* Lista de Enlaces Principales */}
-        <section className="flex flex-col gap-1.5 sm:gap-2 my-auto shrink-0" aria-label="Enlaces directos">
+        <section className="flex flex-col gap-1.5 sm:gap-2 mb-2 sm:mb-2.5 shrink-0" aria-label="Enlaces directos">
           
           {/* 1. CATÁLOGO */}
           <LinkCard
@@ -168,11 +168,11 @@ export default function App() {
 
         </section>
 
-        {/* Sección de Fragancias Destacadas */}
+        {/* Sección de Fragancias Destacadas (subida y más próxima a los enlaces) */}
         <FeaturedSection onOpenModal={(type) => setActiveModal(type)} />
 
         {/* Footer */}
-        <footer className="text-center pt-0.5 pb-1 select-none shrink-0">
+        <footer className="text-center pt-2 pb-1.5 select-none shrink-0">
           <span className="font-sans text-[7.5px] sm:text-[8.5px] tracking-[2.2px] text-white/45 uppercase">
             © LEVJA · FRAGANCIAS EXCLUSIVAS
           </span>
