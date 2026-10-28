@@ -30,13 +30,13 @@ function PerfumeInfo({ line1, line2, brand, desc, onClick, label }) {
 export default function FeaturedSection({ onOpenModal }) {
   return (
     <section className="w-full select-none shrink-0" aria-label="Fragancias destacadas">
-      <div className="relative w-full h-[205px] sm:h-[245px] overflow-hidden rounded-[12px] sm:rounded-[14px] border border-slate-300/35 bg-black/20 shadow-[0_6px_24px_rgba(0,0,0,0.4)]">
+      <div className="relative w-full h-[210px] sm:h-[250px] overflow-hidden rounded-[12px] sm:rounded-[14px] border border-slate-300/35 bg-black/20 shadow-[0_6px_24px_rgba(0,0,0,0.4)]">
 
-        {/* Escena de fondo: perfumes sobre las rocas volcánicas */}
+        {/* Escena de fondo: perfumes sobre las rocas volcánicas en 2x Retina */}
         <img
           src="./assets/featured_scene.webp"
           alt="Afnan 9PM Night Out y Lattafa Nebras sobre rocas volcánicas"
-          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+          className="absolute inset-0 w-full h-full object-cover object-[center_bottom] pointer-events-none"
           loading="eager"
         />
 
@@ -53,12 +53,12 @@ export default function FeaturedSection({ onOpenModal }) {
         <div className="relative z-10 text-center pt-2 sm:pt-2.5">
           <div className="flex items-center justify-center gap-2 sm:gap-2.5">
             <span className="h-px w-10 sm:w-[60px] bg-gradient-to-r from-transparent to-slate-300/70" />
-            <h2 className="font-sans text-[8.5px] sm:text-[10px] font-normal tracking-[2px] sm:tracking-[2.8px] text-slate-100 uppercase">
+            <h2 className="font-sans text-[8.5px] sm:text-[10px] font-normal tracking-[2px] sm:tracking-[2.8px] text-slate-100 uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
               Fragancias destacadas
             </h2>
             <span className="h-px w-10 sm:w-[60px] bg-gradient-to-l from-transparent to-slate-300/70" />
           </div>
-          <span className="block font-sans text-[7.5px] sm:text-[8.5px] tracking-[1.8px] sm:tracking-[2.2px] text-slate-300/70 uppercase mt-0.5">
+          <span className="block font-sans text-[7.5px] sm:text-[8.5px] tracking-[1.8px] sm:tracking-[2.2px] text-slate-300/80 uppercase mt-0.5 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
             Dos íconos, un estilo
           </span>
         </div>
