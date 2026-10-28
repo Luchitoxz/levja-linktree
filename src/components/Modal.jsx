@@ -24,10 +24,10 @@ export default function Modal({ isOpen, onClose, modalType }) {
   if (!isOpen) return null;
 
   // Modal para Fragancias
-  if (modalType === '9pm' || modalType === 'montale') {
+  if (modalType === '9pm' || modalType === 'nebras') {
     const data = LEVJA_CONFIG.fragrances[modalType];
     const orderUrl = `https://wa.me/${LEVJA_CONFIG.whatsappNumber}?text=${encodeURIComponent(
-      modalType === '9pm' ? LEVJA_CONFIG.msg9pm : LEVJA_CONFIG.msgMontale
+      modalType === '9pm' ? LEVJA_CONFIG.msg9pm : LEVJA_CONFIG.msgNebras
     )}`;
 
     return (

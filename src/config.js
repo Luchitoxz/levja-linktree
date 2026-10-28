@@ -14,9 +14,9 @@ export const LEVJA_CONFIG = {
   // Mensajes predeterminados
   defaultWhatsappMsg: "Hola LEVJA! Quisiera hacer una consulta sobre sus productos.",
   msg9pm: "Hola LEVJA! Quiero consultar precio y disponibilidad de Afnan 9PM Night Out.",
-  msgMontale: "Hola LEVJA! Quiero consultar precio y disponibilidad de Montale Arabians Tonka.",
+  msgNebras: "Hola LEVJA! Quiero consultar precio y disponibilidad de Lattafa Nebras Pride.",
 
-  // Datos detallados de las fragancias
+  // Datos detallados de las fragancias destacadas
   fragrances: {
     "9pm": {
       brand: "AFNAN PERFUMES",
@@ -31,17 +31,17 @@ export const LEVJA_CONFIG = {
       image: "./assets/afnan_9pm.webp",
       theme: "silver"
     },
-    "montale": {
-      brand: "MONTALE PARIS",
-      name: "ARABIANS TONKA",
+    "nebras": {
+      brand: "LATTAFA PERFUMES",
+      name: "NEBRAS PRIDE",
       subtitle: "Eau de Parfum · 100ml / 3.4 Fl.Oz.",
-      description: "Un tributo a la nobleza del caballo árabe. Fragancia oriental opulenta que fusiona especias ardientes, rosas búlgaras y haba tonka con un toque gourmand dulce irresistible.",
+      description: "Una fragancia cautivadora y sensual que combina frutos rojos glaseados, vainilla cremosa y cacao refinado. Un aroma gourmand oriental moderno con una fijación y estela deslumbrantes.",
       notes: {
-        salida: "Azafrán de Oriente, Bergamota de Calabria",
-        corazon: "Madera de Agar (Oud), Rosa de Bulgaria",
-        fondo: "Haba Tonka, Caña de Azúcar, Ámbar, Almizcle Blanco"
+        salida: "Frutos Rojos glaseados, Mandarina jugosa",
+        corazon: "Vainilla Bourbon, Cacao puro, Rosa delicada",
+        fondo: "Haba Tonka, Azúcar moreno, Ámbar, Almizcle"
       },
-      image: "./assets/montale_arabians_tonka.webp",
+      image: "./assets/lattafa_nebras.webp",
       theme: "silver"
     }
   }

@@ -35,7 +35,7 @@ export default function FeaturedSection({ onOpenModal }) {
         {/* Escena de fondo: perfumes sobre las rocas volcánicas */}
         <img
           src="./assets/featured_scene.webp"
-          alt="Afnan 9PM Night Out y Montale Arabians Tonka sobre rocas volcánicas"
+          alt="Afnan 9PM Night Out y Lattafa Nebras sobre rocas volcánicas"
           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
           loading="eager"
         />
@@ -84,8 +84,8 @@ export default function FeaturedSection({ onOpenModal }) {
               <span className="absolute inset-x-2 top-[20%] h-[55%] rounded-full opacity-0 blur-2xl bg-white/20 transition-opacity duration-300 group-hover:opacity-100" />
             </button>
             <button
-              onClick={() => onOpenModal('montale')}
-              aria-label="Ver detalles de Arabians Tonka"
+              onClick={() => onOpenModal('nebras')}
+              aria-label="Ver detalles de Lattafa Nebras"
               className="group relative w-1/2 h-full cursor-pointer"
             >
               <span className="absolute inset-x-2 top-[20%] h-[55%] rounded-full opacity-0 blur-2xl bg-slate-200/25 transition-opacity duration-300 group-hover:opacity-100" />
@@ -94,12 +94,12 @@ export default function FeaturedSection({ onOpenModal }) {
 
           <div className="justify-self-end sm:pr-1">
             <PerfumeInfo
-              line1="Arabians"
-              line2="Tonka"
-              brand="Montale"
-              desc="Un aroma exótico, elegante y sofisticado."
-              onClick={() => onOpenModal('montale')}
-              label="Ver más sobre Arabians Tonka"
+              line1="Nebras"
+              line2="Pride"
+              brand="Lattafa"
+              desc="Un aroma cautivador, dulce, sensual y envolvente."
+              onClick={() => onOpenModal('nebras')}
+              label="Ver más sobre Lattafa Nebras"
             />
           </div>
         </div>
