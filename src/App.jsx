@@ -173,7 +173,7 @@ export default function App() {
 
         {/* Footer */}
         <footer className="text-center pt-2 pb-1.5 select-none shrink-0">
-          <span className="font-sans text-[7.5px] sm:text-[8.5px] tracking-[2.2px] text-white/45 uppercase">
+          <span className="font-sans text-[7.5px] sm:text-[8.5px] tracking-[2.2px] text-slate-400/60 uppercase">
             © LEVJA · FRAGANCIAS EXCLUSIVAS
           </span>
         </footer>

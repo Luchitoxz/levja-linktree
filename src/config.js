@@ -42,7 +42,7 @@ export const LEVJA_CONFIG = {
         fondo: "Haba Tonka, Caña de Azúcar, Ámbar, Almizcle Blanco"
       },
       image: "./assets/montale_arabians_tonka.webp",
-      theme: "gold"
+      theme: "silver"
     }
   }
 };
